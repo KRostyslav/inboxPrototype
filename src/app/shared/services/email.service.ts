@@ -12,15 +12,28 @@ export class EmailService {
 
   constructor( private  _httpService: HttpClient ) { }
 
-  public getEmails(): Observable<any> {
+  public getEmails(): Observable<Email[]> {
     console.log('!!!', this._httpService.get('./assets/data.json'));
     return this._httpService.get('./assets/data.json');
+  }
 
-    // this._httpService.get('./assets/data.json')
-    //   .subscribe(( response ) => {
-    //     console.log('Emails :: ', response.json());
-    //     this.emails = JSON.stringify(response.json());
-    //   });
-    // return this.emails;
+  public replyOnEmail(email?: Email): void {
+    console.log('Reply');
+  }
+
+  public forwardOnEmail(email?: Email): void {
+    console.log('Forward');
+  }
+
+  public deleteEmail(id?: number): void {
+    console.log('Delete');
+  }
+
+  public saveEmail(email?: Email): void {
+    console.log('Save');
+  }
+
+  public sendEmail(email?: Email): void {
+    console.log('Send');
   }
 }

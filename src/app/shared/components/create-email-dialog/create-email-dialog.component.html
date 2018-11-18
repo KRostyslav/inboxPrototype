@@ -24,8 +24,8 @@
     </form>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>SEND</button>
-    <button mat-button>SAVE</button>
-    <button mat-button>DELETE</button>
+    <button mat-button (click)="sendEmail()">SEND</button>
+    <button mat-button (click)="saveEmail()">SAVE</button>
+    <button mat-button (click)="deleteEmail()">DELETE</button>
   </mat-card-actions>
 </mat-card>
