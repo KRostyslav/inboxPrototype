@@ -1,1 +1,1 @@
-# inboPrototype
+# inboxPrototype
