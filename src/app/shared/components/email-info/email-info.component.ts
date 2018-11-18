@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Email} from '../../models/email.model';
 
 @Component({
   selector: 'app-email-info',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./email-info.component.scss']
 })
 export class EmailInfoComponent implements OnInit {
+
+  @Input() email: Email;
 
   constructor() { }
 

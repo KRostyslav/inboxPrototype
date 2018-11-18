@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="menu">MENU</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item  routerLink="/inbox" routerLinkActive="active">Inbox</button>
+    <button mat-menu-item  routerLink="/draft" routerLinkActive="active">Draft</button>
+    <button mat-menu-item  routerLink="/trash" routerLinkActive="active">Trash</button>
+  </mat-menu>
+  <span>{{title}}</span>
+  <span class="text-right">{{nameApp}}</span>
+</mat-toolbar>

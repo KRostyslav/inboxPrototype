@@ -1,0 +1,15 @@
+.block-email {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  cursor: pointer;
+  .block-icon {
+  }
+  .block-author {
+    font-weight: bold;
+    width: 30%;
+  }
+  .block-theme {
+  }
+}

@@ -1,0 +1,9 @@
+.block-inbox{
+  display: flex;
+  .block-list-email{}
+  .block-write-email{
+    position: fixed;
+    top: 85%;
+    right: 5%;
+  }
+}

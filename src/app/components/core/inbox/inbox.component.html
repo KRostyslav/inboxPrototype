@@ -1,0 +1,15 @@
+<app-topbar title="Inbox"></app-topbar>
+<div class="container">
+  <div class="block-inbox">
+    <div class="block-list-email">
+      <div *ngFor="let email of emails">
+        <app-email-info [email]="email" (click)="getEmailInfo(email)"></app-email-info>
+      </div>
+    </div>
+    <div class="block-write-email">
+      <app-write-email (click)="createEmail()"></app-write-email>
+    </div>
+  </div>
+</div>
+
+
