@@ -12,7 +12,7 @@ export class EmailService {
 
   constructor( private  _httpService: HttpClient ) { }
 
-  public getEmails(): Observable<Email[]> {
+  public getEmails(): Observable<any> {
     console.log('!!!', this._httpService.get('./assets/data.json'));
     return this._httpService.get('./assets/data.json');
   }
