@@ -25,12 +25,8 @@ import {FormsModule} from '@angular/forms';
 const config = new AuthServiceConfig([
   {
     id: GoogleLoginProvider.PROVIDER_ID,
-    provider: new GoogleLoginProvider('107320320709-oagbrntjt0ktgbelafte12f5461689f7.apps.googleusercontent.com')
+    provider: new GoogleLoginProvider('624796833023-clhjgupm0pu6vgga7k5i5bsfp6qp6egh.apps.googleusercontent.com')
   },
-  // {
-  //   id: GoogleLoginProvider.PROVIDER_ID,
-  //   provider: new GoogleLoginProvider('624796833023-clhjgupm0pu6vgga7k5i5bsfp6qp6egh.apps.googleusercontent.com')
-  // },
   // {
   //   id: FacebookLoginProvider.PROVIDER_ID,
   //   provider: new FacebookLoginProvider('561602290896109')
